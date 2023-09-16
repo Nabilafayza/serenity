@@ -15,7 +15,7 @@
     
     <div class="card">
       <div class="card-body">
-        today is: <h4 id="activeDate">31 December 2023</h4>
+        today is: <h4 id="activeDate">01 September 2023</h4>
       </div>
     </div>
     <div class="right-section col-lg-6">
@@ -26,5 +26,32 @@
             <div id='journal-card' class="card-body">
               <!-- start generation here-->
 
+              <!-- until here -->
+            </div>
+          </div>
+          
+          <div id="journalCard" class="collapse">
+            <br>
+            <div class="card">
+              <div class="card-body">
+                <b>New Journal:</b> <span id="newjournal-inputDate">20/05</span>
+                <hr>
+                <form id="form-newJournal">
+                  <div class="form-group">
+                    <label for="input-title">Title</label>
+                    <input required autocomplete="off" type="text" class="form-control" id="input-title" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="input-journal">Write Something Here</label>
+                    <textarea required class="form-control" id="input-journal" rows="3"></textarea>
+                  </div>
+                  <button id="btn-submit-newJournal" type="submit" class="btn btn-info btn-block">Add new journal entry </button>
                 </form>
+              </div>
+            </div>
+          </div>
+          <br>
+          <button type="btn-addJournal" class="btn btn-block btn-lg btn-outline-info" data-toggle="collapse" data-target="#journalCard">Write a Journal</button> 
+        </section>
+      </div>
 @endsection
